@@ -1,15 +1,16 @@
 <template>
   <div class="body">
-
+    
+    
     <div class="hero">
       <div class="brand">
         <div>EKER<span class="it">IT/&gt;</span></div>
       </div>
-    
-    <div class="headline">
-      <h2>Your complete IT-solution</h2>
+
+      <div class="headline">
+        <h2>Your complete IT-solution</h2>
+      </div>
     </div>
-  </div>
 
     <div class="wrapper">
       <span class="first-text">WE CAN </span>
@@ -25,6 +26,7 @@
     <div class="Btn">
       <button>See What we can offer you</button>
     </div>
+    <div class="view2" >xx</div>
   </div>
 </template>
 
@@ -38,17 +40,30 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-width: 100vw;
   background: #000;
   margin-right: 0;
 }
-
+.viwe2{
+  background-color: #fff;
+  width: 200px;
+  height: 100vh;
+}
 .Btn {
   margin: 0 12vw;
   width: 25vw;
   height: 40px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background: linear-gradient(
+    to right,
+    #77530a,
+    #ffd277,
+    #77530a,
+    #77530a,
+    #ffd277,
+    #77530a
+  );
   background-size: 250%;
   background-position: left;
   color: #ffd277;
@@ -90,7 +105,6 @@
   transform: scale(0.95);
 }
 
-
 .wrapper {
   display: flex;
   width: 65vw;
@@ -98,49 +112,49 @@
 
   background: #000;
 }
-.hero{
+.hero {
   font-size: 2rem;
-    margin: 20vh 12vw 0 12vw;
-    background-color: #000;
+  margin: 20vh 12vw 0 12vw;
 }
 .brand {
   font-size: 3rem;
   text-transform: uppercase;
   color: silver;
   align-items: center;
+  width: fit-content;
 }
 .it {
-  color: red;
+  color: rgb(199, 116, 116);
   padding-left: 6px;
   font-weight: 700;
 }
 
-  .headline h2{
-    display: inline-block; 
-    margin: 0; 
-    font-size: 2rem; 
-    background: #000;
-    width: fit-content;
-  } 
+.headline h2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 2rem;
+  width: fit-content;
+  color: silver;
+}
 
 .wrapper .first-text {
-  font-size: 60px;
-  color: #fff;
+  font-size: 3rem;
+  color: silver;
 }
 
 .wrapper .sec-texts {
-  height: 90px;
-  line-height: 90px;
+  height: 85px;
+  line-height: 88px;
   overflow: hidden;
 }
 
 .sec-texts li {
   position: relative;
   top: 0;
-  font-size: 60px;
-  color: #0ef;
+  font-size: 3rem;
+  color: whitesmoke;
   list-style: none;
-  text-shadow: 0 0 10px #0ef;
+  text-shadow: 0 0 10px rgb(0, 2, 14);
   animation: slide 12s steps(4) infinite, colorful 6s infinite;
 }
 
