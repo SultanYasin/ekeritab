@@ -1,32 +1,34 @@
 <template>
   <div class="body">
-    
-    
-    <div class="hero">
-      <div class="brand">
-        <div>EKER<span class="it">IT/&gt;</span></div>
+    <div class="viwe1">
+      <div class="hero">
+        <div class="brand">
+          <div>EKER<span class="it">IT/&gt;</span></div>
+        </div>
+
+        <div class="headline">
+          <h2>Your complete IT-solution</h2>
+        </div>
       </div>
 
-      <div class="headline">
-        <h2>Your complete IT-solution</h2>
+      <div class="wrapper">
+        <span class="first-text">WE CAN </span>
+        <ul class="sec-texts">
+          <li><span>Frontend</span></li>
+          <li><span>Backend</span></li>
+          <li><span>Database</span></li>
+          <li><span>IT-Consulting</span></li>
+          <li><span>Linux</span></li>
+        </ul>
+      </div>
+      <div class="Btn">
+        <button>See What we can offer you</button>
       </div>
     </div>
 
-    <div class="wrapper">
-      <span class="first-text">WE CAN </span>
-      <ul class="sec-texts">
-        <li><span>Frontend</span></li>
-        <li><span>Backend</span></li>
-        <li><span>Database</span></li>
-        <li><span>IT-Consulting</span></li>
-        <li><span>Linux</span></li>
-      </ul>
+    <div class="viwe2">
+      <img src="../assets/code11.jpg" alt="" srcset="" />
     </div>
-
-    <div class="Btn">
-      <button>See What we can offer you</button>
-    </div>
-    <div class="view2" >xx</div>
   </div>
 </template>
 
@@ -36,18 +38,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 .body {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  min-width: 100vw;
-  background: #000;
-  margin-right: 0;
+  min-height: 90vh;
+  max-width: 100vw;
+  background: linear-gradient(to right,#010109 ,#000000,#20202b);
+  overflow-y:hidden ;
 }
-.viwe2{
-  background-color: #fff;
-  width: 200px;
-  height: 100vh;
+/* #20202b */
+.viwe1 {
+  width: 63vw;
+}
+.viwe2 {
+  width: 37vw;
+  margin-right: 20px;
+}
+img {
+  width: 100%;
+  height: 89vh;
+ 
 }
 .Btn {
   margin: 0 12vw;
@@ -107,7 +117,7 @@
 
 .wrapper {
   display: flex;
-  width: 65vw;
+  width: 40vw;
   margin: 10vh 12vw;
 
   background: #000;
