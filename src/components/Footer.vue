@@ -1,86 +1,131 @@
 <template>
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1>EKER<span>IT</span></h1>
-      </div>
-      <h2>Your Complete Web Solution</h2>
-      <div class="social-icon">
-        <a href="#" class="social-item">
-          <img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" />
-        </a>
-        <a href="#" class="social-item">
-          <img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" />
-        </a>
-        <a href="#" class="social-item">
-          <img src="https://img.icons8.com/bubbles/100/000000/twitter.png" />
-        </a>
-        <a href="#" class="social-item">
-          <img src="https://img.icons8.com/bubbles/100/000000/behance.png" />
-        </a>
-      </div>
-      <p>&copy; {{ new Date().getFullYear() }} Ekerit.</p>
+  <div class="container">
+    <div class="social">
+
+      <button class="button facebook"></button>
+
+      <button class="button linkedin"></button>
+
+      <button class="button instagram"></button>
+      
     </div>
-  </section>
+
+    <div class="txt">
+      <h3>Ekerit AB</h3>
+      <h4>Organisationsnummer 559065-5766</h4>
+    </div>
+  </div>
 </template>
 
 <script>
-
 export default {};
 </script>
 
-<style scooped >
-#footer {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  text-align: center;
+<script></script>
 
+<style scoped>
+.container {
+  display: grid;
+  justify-items: center;
 }
-
-#footer .footer {
-  min-height: 150px;
-  
-  flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 30px; 
-}
-
-#footer h2 {
-  color: white;
-  font-weight: 500;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  margin-top: 10px;
-  margin-bottom: 20px; 
-  font-family: "Arial", sans-serif; }
-
-#footer .social-icon {
+.social {
   display: flex;
-  justify-content: center; 
-  margin-bottom: 20px; 
 }
 
-#footer .social-item {
-  height: 50px;
-  width: 50px;
-  margin: 0 5px;
-  border-radius: 50%; 
-  overflow: hidden; 
+.button {
+  width: 45px;
+  height: 45px;
+  background-color: #3b5998;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.185),
+    0px 3px 3px rgba(255, 255, 255, 0.178) inset,
+    0px -3px 3px rgba(0, 0, 0, 0.281) inset;
+  transition: all 0.3s;
+  cursor: pointer;
+  padding-bottom: 3px;
+  margin: 10px;
 }
 
-#footer .social-item img {
-  filter: grayscale(1);
-  transition: 0.3s ease filter;
-  width: 100%; 
-  height: 100%;
-}
-
-#footer .social-item:hover img {
-  filter: grayscale(0);
-}
-
-#footer p {
+.button::before {
+  background-color: transparent;
+  content: "";
+  font-size: 1.6em;
+  font-weight: 700;
   color: white;
-  font-size: 1.3rem;
-  font-family: "Arial", sans-serif; 
+  z-index: 5;
+  transition: all 0.3s;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+.button::after {
+  content: "acebook";
+  background-color: transparent;
+  font-size: 0;
+  opacity: 0;
+  font-weight: 700;
+  color: white;
+  z-index: 5;
+  transition: all 0.3s;
+  transform: translateX(60px);
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+.button:hover {
+  width: 160px;
+  border-radius: 30px;
+}
+
+.button:hover::after {
+  opacity: 1;
+  font-size: 1.6em;
+  transform: translateX(0px);
+}
+
+.button:hover .shine {
+  transform: translate(-70px, 10px);
+}
+
+.button.facebook {
+  background-color: #3b5998;
+}
+
+.button.facebook::before {
+  content: "f";
+}
+
+.button.facebook::after {
+  content: "acebook";
+}
+
+/* LinkedIn Button */
+.button.linkedin {
+  background-color: #0e76a8;
+}
+
+.button.linkedin::before {
+  content: "in";
+}
+
+.button.linkedin::after {
+  content: "LinkedIn";
+}
+
+/* Instagram Button */
+.button.instagram {
+  background-color: #e4405f;
+}
+
+.button.instagram::before {
+  content: "i";
+}
+
+.button.instagram::after {
+  content: "nstagram";
 }
 </style>
