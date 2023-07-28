@@ -151,10 +151,15 @@ img {
   font-size: 3rem;
   color: silver;
 }
+.wrapper{
+ display: flex;
+  text-align: center;
+  align-items: center;
+}
 
 .wrapper .sec-texts {
-  height: 85px;
-  line-height: 88px;
+  height: 90px;
+  line-height: 90px;
   overflow: hidden;
 }
 

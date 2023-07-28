@@ -1,5 +1,9 @@
 <template>
   <div class="container">
+    <div class="txt">
+      <h3>Ekerit AB</h3>
+      <h4>Organisationsnummer 559065-5766</h4>
+    </div>
     <div class="social">
 
       <button class="button facebook"></button>
@@ -10,10 +14,7 @@
       
     </div>
 
-    <div class="txt">
-      <h3>Ekerit AB</h3>
-      <h4>Organisationsnummer 559065-5766</h4>
-    </div>
+
   </div>
 </template>
 
@@ -25,17 +26,22 @@ export default {};
 
 <style scoped>
 .container {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  background: linear-gradient(to right,#010109 ,#000000);
+ 
 }
 .social {
   display: flex;
+
+  
 }
 
 .button {
   width: 45px;
   height: 45px;
-  background-color: #3b5998;
+  background-color: #18243c;
   border: none;
   border-radius: 50%;
   position: relative;
@@ -92,7 +98,7 @@ export default {};
 }
 
 .button.facebook {
-  background-color: #3b5998;
+  background-color: #25324c;
 }
 
 .button.facebook::before {
@@ -105,7 +111,7 @@ export default {};
 
 /* LinkedIn Button */
 .button.linkedin {
-  background-color: #0e76a8;
+  background-color: #25324c;
 }
 
 .button.linkedin::before {
@@ -118,7 +124,7 @@ export default {};
 
 /* Instagram Button */
 .button.instagram {
-  background-color: #e4405f;
+  background-color: ##25324c;
 }
 
 .button.instagram::before {
@@ -128,4 +134,24 @@ export default {};
 .button.instagram::after {
   content: "nstagram";
 }
+
+
+
+@media only screen and (max-width: 768px) {
+  .container{
+    display: grid;
+    grid-gap: 20px;
+    text-align: center;
+  }
+  .social{
+    justify-content: center;
+    width: 280px;
+    height: 200px;
+    margin: auto auto; 
+  }
+}
+
+
+
+
 </style>

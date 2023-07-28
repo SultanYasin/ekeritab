@@ -1,12 +1,11 @@
 
 
 <template>
-  <div id="app">
-    
+  
+  <div id="app">    
       <div id="header">
         <div class="header container">
-          <div class="nav-bar">
-          
+          <div class="nav-bar">          
             <div class="nav-list">
               <div class="hamburger" @click="toggleMenu">
                 <div class="bar"></div>
@@ -18,11 +17,11 @@
                 <li><RouterLink to="/about" @click.stop="toggleMenu">ABOUT</RouterLink></li>
                 <li><RouterLink to="/contact" @click.stop="toggleMenu">CONTACT</RouterLink></li>
               </ul>
+
             </div>
           </div>
         </div>
       </div>
-  
   </div>
 
 </template>
