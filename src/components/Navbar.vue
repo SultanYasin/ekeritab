@@ -1,29 +1,38 @@
-
-
 <template>
-  
-  <div id="app">    
-      <div id="header">
-        <div class="header container">
-          <div class="nav-bar">          
-            <div class="nav-list">
-              <div class="hamburger" @click="toggleMenu">
-                <div class="bar"></div>
-              </div>
-
-              <ul :class="{ active: isMenuOpen }">
-                <li><RouterLink to="/" @click.stop="toggleMenu">HOME</RouterLink></li>
-                <li><RouterLink to="/services" @click.stop="toggleMenu">SERVICES</RouterLink></li>
-                <li><RouterLink to="/about" @click.stop="toggleMenu">ABOUT</RouterLink></li>
-                <li><RouterLink to="/contact" @click.stop="toggleMenu">CONTACT</RouterLink></li>
-              </ul>
-
+  <div id="app">
+    <div id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="nav-list">
+            <div class="hamburger" @click="toggleMenu">
+              <div class="bar"></div>
             </div>
+
+            <ul :class="{ active: isMenuOpen }">
+              <li>
+                <RouterLink to="/" @click.stop="toggleMenu">HOME</RouterLink>
+              </li>
+              <li>
+                <RouterLink to="/services" @click.stop="toggleMenu"
+                  >SERVICES</RouterLink
+                >
+              </li>
+              <li>
+                <RouterLink to="/about" @click.stop="toggleMenu"
+                  >ABOUT</RouterLink
+                >
+              </li>
+              <li>
+                <RouterLink to="/contact" @click.stop="toggleMenu"
+                  >CONTACT</RouterLink
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -56,15 +65,10 @@ export default {
 };
 </script>
 
-<style scoped >
-
-
-
+<style scoped>
 #app {
   position: relative;
- 
 }
-
 
 #header {
   position: fixed;
@@ -73,17 +77,15 @@ export default {
   top: 0;
   width: 100%;
   height: auto;
-
 }
 #header .header {
   min-height: 8vh;
-  background-color: rgba(31, 30, 30, 0.24);
+  background: linear-gradient(to right, #010109, #000000);
   transition: 0.3s ease;
   padding: 0;
   margin: 0;
 }
 #header .nav-bar {
-  
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -91,7 +93,6 @@ export default {
   max-width: 1300px;
   padding: 0 10px;
 }
-
 
 #header .nav-list ul {
   list-style: none;

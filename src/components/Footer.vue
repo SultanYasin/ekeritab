@@ -22,14 +22,16 @@
 export default {};
 </script>
 
-<script></script>
+
 
 <style scoped>
 .container {
   display: flex;
+  position: fixed;
   width: 100vw;
   justify-content: space-around;
   background: linear-gradient(to right,#010109 ,#000000);
+  bottom: 0;
  
 }
 .social {

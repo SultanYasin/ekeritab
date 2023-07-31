@@ -23,6 +23,20 @@
       </div>
       <div class="item">
         <div class="header">
+          <div class="icon"><img src="../assets/icons8-bill-96.png" /></div>
+          <div class="title"><h2>E-faktura</h2></div>
+        </div>
+        <div class="text">
+          <p>
+            Vi hjälper er att digitalisera era processer, inklusive elektroniska
+            dokument och fakturor. Vi kan hjälpa er att konvertera flöden till
+            nya digitala kanaler, såsom e-fakturatjänster, Peppol, digitala
+            brevlådor och dokumentarkiv.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">
           <div class="icon"><img src="../assets/icons8-project-96.png" /></div>
           <div class="title"><h2>Project</h2></div>
         </div>
@@ -50,21 +64,7 @@
           </p>
         </div>
       </div>
-      <div class="item">
-        <div class="header">
-          <div class="icon"><img src="../assets/icons8-bill-96.png" /></div>
-          <div class="title"><h2>E-faktura</h2></div>
-        </div>
-        <div class="text">
-          <p>
-            Vi erbjuder hjälp med digitalisering av era processer, särskilt inom
-            elektroniska dokument och fakturor. Vi kan hjälpa er att konvertera
-            flöden till nya digitala kanaler, såsom e-fakturatjänster, Peppol,
-            digitala brevlådor och dokumentarkiv med mera. Lita på oss för att
-            optimera er digitala transformation.
-          </p>
-        </div>
-      </div>
+
       <div class="item">
         <div class="header">
           <div class="icon"><img src="../assets/icons8-website-96.png" /></div>
@@ -111,9 +111,9 @@
   height: 90vh;
   width: 100vw;
   display: grid;
-  margin: 20% 60px 60px 120px;
+  margin: 20% 0;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: px;
   justify-content: center;
   align-items: center;
   place-items: center;

@@ -50,10 +50,7 @@
 .viwe1 {
   width: 63vw;
 }
-.viwe2 {
-  width: 37vw;
-  margin-right: 20px;
-}
+
 img {
   width: 100%;
   height: 89vh;

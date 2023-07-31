@@ -1,44 +1,61 @@
 <template>
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
-
-        
+  <div class="wrapper">
+    <div class="container">
+      <div class="service-header title">
+        <h1>OUR SERVICES</h1>
         <h3>
           Vi hjälper er att utveckla era digitala processer och tjänster med
           innovativa systemlösningar.
         </h3>
-
       </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon">
-            <img src="../assets/icons8-code-96.png" />
-            <div class="title-container"><h2>Systemutveckling</h2></div>
-          </div>
+      <div class="item">
+        <div class="header">
+          <div class="icon"><img src="../assets/icons8-code-96.png" /></div>
+          <div class="title"><h2>Systemutveckling</h2></div>
+        </div>
+        <div class="text">
           <p>
             Med en genomtänkt och utbyggbar arkitektur kan vi utveckla
             systemlösningar som möter era krav idag såväl som i framtiden, allt
             efter era behov.
           </p>
         </div>
-        <div class="service-item">
-          <div class="icon">
-            <img src="../assets/icons8-project-96.png" />
-            <div class="title-container"><h2>Projekt</h2></div>
-          </div>
+      </div>
+      <div class="item">
+        <div class="header">
+          <div class="icon"><img src="../assets/icons8-bill-96.png" /></div>
+          <div class="title"><h2>E-faktura</h2></div>
+        </div>
+        <div class="text">
+          <p>
+            Vi hjälper er att digitalisera era processer, inklusive elektroniska
+            dokument och fakturor. Vi kan hjälpa er att konvertera flöden till
+            nya digitala kanaler, såsom e-fakturatjänster, Peppol, digitala
+            brevlådor och dokumentarkiv.
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">
+          <div class="icon"><img src="../assets/icons8-project-96.png" /></div>
+          <div class="title"><h2>Project</h2></div>
+        </div>
+        <div class="text">
           <p>
             Vi analyserar de behov, idéer, problem och krav som finns och
             hjälper er genom design, testning och utveckling till drift och
             förvaltning.
           </p>
         </div>
-        <div class="service-item">
+      </div>
+      <div class="item">
+        <div class="header">
           <div class="icon">
             <img src="../assets/icons8-document-144.png" />
-            <div class="title-container"><h2>Dokumenthantering</h2></div>
           </div>
+          <div class="title"><h2>Dokumenthantering</h2></div>
+        </div>
+        <div class="text">
           <p>
             Vi hjälper er med utformning och producering av dokument, fakturor
             och olika flöden med erfarenheter från ett flertal
@@ -46,12 +63,14 @@
             nyutveckling i OpenText StreamServe.
           </p>
         </div>
+      </div>
 
-        <div class="service-item">
-          <div class="icon">
-            <img src="../assets/icons8-website-96.png" />
-            <div class="title-container"><h2>Webb</h2></div>
-          </div>
+      <div class="item">
+        <div class="header">
+          <div class="icon"><img src="../assets/icons8-website-96.png" /></div>
+          <div class="title"><h2>Webb</h2></div>
+        </div>
+        <div class="text">
           <p>
             Vad är en bra tjänst utan en användbar framsida? Vi kan erbjuda
             framtidssäkra lösningar för era unika interna och publika
@@ -59,11 +78,15 @@
             nyutvecklat system.
           </p>
         </div>
-        <div class="service-item">
+      </div>
+      <div class="item">
+        <div class="header">
           <div class="icon">
             <img src="../assets/icons8-project-96 (1).png" />
-            <div class="title-container"><h2>Infrastruktur</h2></div>
           </div>
+          <div class="title"><h2>Infrastruktur</h2></div>
+        </div>
+        <div class="text">
           <p>
             Det är inte bara mjukvaran som är viktig. Behöver ni hjälp med drift
             av tjänster på egna servrar eller i molntjänster har vi kompetens
@@ -71,134 +94,72 @@
             databasadministration och backuphantering.
           </p>
         </div>
-
-        <div class="service-item">
-          <div class="icon">
-            <img src="../assets/icons8-bill-96.png" />
-            <div class="title-container"><h2>E-Fakturor</h2></div>
-          </div>
-          <p>
-            Vi hjälper er med er digitaliseringsprocess. Elektroniska dokument
-            och fakturor är något vi jobbar mycket med. Behöver ni hjälp att
-            konvertera flöden till nya digitala kanaler så hjälper vi er med
-            det. Det kan handla om olika typer av e-fakturatjänster, Peppol,
-            digitala brevlådor, dokumentarkiv etc.
-          </p>
-        </div>
       </div>
     </div>
-  </section>
-  <body></body>
+  </div>
 </template>
-<script>
-export default {};
-</script>
 
 <style scoped>
-#services .services {
-  flex-direction: column;
-  text-align: center;
-  max-width: 100vw;
-  margin: 7vh auto;
-  padding: 100px 0;
-  height: 100vh;
-  overflow: auto;
-}
-#services .service-top {
-  max-width: 500px;
-  margin: 0 auto;
-}
-#services .service-bottom {
+.wrapper {
+  height: calc(100vh - 10vh);
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
+  align-items: center;
+  overflow-y: auto;
+}
+.container {
+  height: 90vh;
+  width: 100vw;
+  display: grid;
+  margin: 20% 0;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+.service-header {
+  padding-top: 7%;
 }
 
+.item {
+  display: block;
+  align-content: center;
+  justify-content: center;
+  width: 300px;
+  height: 250px;
+  overflow-y: hidden;
+  margin: 1vh 1vw;
+}
 
- img {
-  height: 45px;
+.title {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin: 5% 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+img {
   width: 45px;
-  border-radius: 50%;
-  margin-top: 0;
-  padding-top: 0;
-} 
-#services .service-item .icon {
-  display: flex;
-  align-items: center;
-  margin: 15px;
-  text-align: center;
-}
-#services .service-item .title-container {
-  padding-left: 10px; 
-}
-#services .service-item {
-  flex-basis: 48%;
-  height: 320px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 10px;
-
-  margin: 10px 1%;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-#services .service-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  /*  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
-  opacity: 0.9;
-  z-index: -1;
-}
-.icon {
-  display: flex;
-  align-items: center;
-  margin: 20px;
+  padding-right: 10px;
 }
 
-#services .service-item h2 {
-  font-size: 1.3rem;
-  color: white;
- 
-  height: 3rem;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
+@media only screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
 
-#services .service-item p {
-  color: white;
-  text-align: left;
-}
-
-/* Media Query For Large Screens */
-@media only screen and (max-width: 1499px) and (min-width: 1000px) {
-  #services .service-bottom .service-item {
-    flex-basis: 30%;
+    margin-bottom: 5%;
   }
-}
-
-/* Media Query For Medium Screens */
-@media only screen and (max-width: 999px) and (min-width: 768px) {
-  #services .service-bottom .service-item {
-    flex-basis: 48%;
+  .item {
+    width: 240px;
+    padding: 10vh auto;
   }
-}
-
-/* Media Query For Small Screens */
-@media only screen and (max-width: 767px) {
-  #services .service-bottom .service-item {
-    flex-basis: 100%;
+  .service-header {
+    padding-top: 8vh;
+    width: 280px;
   }
 }
 </style>
