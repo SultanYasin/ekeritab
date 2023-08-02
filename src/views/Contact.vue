@@ -1,122 +1,168 @@
 <template>
   <div class="container">
-  <div class="card">
-    <div class="header">
-      <div class="icon-container" >  
-        <img src="../assets/icons8-call-96.png" alt="phone" class="icon"/>
-      </div>
-      <h1 class="head" >Telefon</h1>
-    </div>
-    <div class="txt"><h2><a href="tel:0370 - 34 11 55">0370 - 34 11 55</a></h2></div>
-  </div>
-  <div class="card">
-    <div class="header">
-      <div class="icon-container" > 
-        <img src="../assets/icons8-mail-94 (1).png" alt="email" class="icon" />
-      </div>
-          <h1 class="head">E-post</h1>
-    </div>
-    <h2><a href="mailto:info@ekerit.se">info@ekerit.se</a></h2>
-  </div>
-  <div class="card">
-    <div class="header">
-      <div class="icon-container" > 
-        <img src="../assets/icons8-region-96.png" alt="location" class="icon" />
-      </div>
-      <h2 class="adress head">Adress</h2>
-      <h4></h4>
-       
-    </div>
-    <div class="address-txt"><h4>Järnvägsgatan 3 <br> 331 37 Värnamo</h4></div>
-  </div>
-  <div class="card">
-    <div class="header">
-      <div class="icon-container" > 
-        <img src="../assets/icons8-address-96.png" alt="location" class="icon" />
-      </div>
-      <h2 class="adress head">Koordinater</h2>
-      <h4></h4>
-       
-    </div>
-    <div class="address-txt"><h4> <a :href="getMapsLink(57.1838, 14.0366)"  target="_blank">57.1838, 14.0366</a></h4></div>
-  </div>
-</div>
+    <div class="wrapper">
 
+      <div class="card">
+        <img src="../assets/icons8-call-96.png" alt="phone" class="icon" />
+        <h2><a href="tel:0370 - 34 11 55">0370 - 34 11 55</a></h2>
+      </div>
+      <div class="card">
+        
+        <img src="../assets/icons8-mail-94 (1).png" alt="email" class="icon"/>
+        <h2><a href="mailto:info@ekerit.se">info@ekerit.se</a></h2>
+      </div>
+     
+<!--       <div class="card">
+        <div class="header">
+          <div class="icon-container">
+          </div>
+          <img src="../assets/icons8-mail-94 (1).png" alt="email" class="icon"/>
+          <h2><a href="mailto:info@ekerit.se">info@ekerit.se</a></h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <div class="icon-container">
+            <img
+              src="../assets/icons8-region-96.png"
+              alt="location"
+              class="icon"
+            />
+          </div>
+          <h3>
+            Järnvägsgatan 3 <br />
+            331 37 Värnamo
+          </h3>
+        </div>
+        <div class="address-txt"></div>
+      </div>
+      <div class="card">
+        <div class="header">
+          <div class="icon-container">
+            <img
+              src="../assets/icons8-address-96.png"
+              alt="location"
+              class="icon"
+            />
+          </div>
+          <h3>
+            <a :href="getMapsLink(57.1838, 14.0366)" target="_blank"
+              >57.1838, 14.0366</a
+            >
+          </h3>
+        </div>
+        <div class="address-txt">
+          <h4></h4>
+        </div>
+      </div> -->
+    </div>
+    <div class="form">
+      <form style="display: grid">
+        <input type="text" /><input type="text" /><input type="text" />
+        <button>send</button>
+      </form>
+    </div>
+  </div>
 </template>
 <script>
 export default {
   methods: {
-    getMapsLink(coordinates){
+    getMapsLink() {
       return `https://www.google.com/maps?q=57.1838,%2014.0366`;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
-
-.container{
+.container {
   display: flex;
- 
   justify-content: center;
   align-items: center;
-  gap: 20px;
   text-align: center;
   height: 100vh;
+  margin: 0 10vw;
+  flex-wrap: wrap;
 }
-.address-txt{
+.wrapper {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+.address-txt {
   color: whitesmoke;
 }
 
-.card{
-  width: 400px;
-  height: 250px;
- 
+/* .card {
+  width: 250px;
+  height: 150px;
   border-radius: 5%;
-  padding: 1%;
   display: grid;
   place-items: center;
-  background-image: linear-gradient(60deg, #29323c 0%, #000000 100%);
-
-
+  font-size: 0.7rem;
+} */
+.card{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
   color: whitesmoke;
 }
-.adress{
+.adress {
   font: 30px inter;
 }
-.address-txt{
+.head {
+  font-size: 1.5rem;
+}
+.address-txt {
   margin-bottom: 0;
   padding-bottom: 0;
   font: 18px inter;
 }
-.card:hover{
+.card:hover {
   border: 3px solid rgb(6, 6, 119);
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
-.header{
-align-self: center;
-justify-self: center;
+.header {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-self: center;
 }
-
+img {
+  width: 50px;
+}
 
 @media only screen and (max-width: 768px) {
-  .container{
-    display: grid;
-    grid-gap: 20px;
-    text-align: center;
+  .container {
+    padding: 15vh 0 7vh 0;
   }
-  .card{
-    width: 280px;
-    height: 200px;
-    margin: auto auto; 
+  .wrapper {
+    padding: 5vh 0;
+  }
+  .card {
+    width: 240px;
+    height: 160px;
+    margin: 1vh auto;
+  }
+
+  .head {
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  .wrapper:last-child {
+    margin-bottom: 10vh;
   }
 }
-
-
-
 </style>

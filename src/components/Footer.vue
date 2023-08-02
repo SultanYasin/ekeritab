@@ -4,16 +4,12 @@
       <h3>Ekerit AB</h3>
       <h4>Organisationsnummer 559065-5766</h4>
     </div>
+
     <div class="social">
-
-      <button class="button facebook"></button>
-
+<!--       <button class="button facebook"></button>
       <button class="button linkedin"></button>
-
-      <button class="button instagram"></button>
-      
+      <button class="button instagram"></button> -->
     </div>
-
 
   </div>
 </template>
@@ -22,22 +18,19 @@
 export default {};
 </script>
 
-
-
 <style scoped>
 .container {
   display: flex;
-  position: fixed;
+  position: sticky;
+  bottom: 0;
   width: 100vw;
   justify-content: space-around;
-  background: linear-gradient(to right,#010109 ,#000000);
+  background: linear-gradient(to right, #010109, #000000);
   bottom: 0;
- 
+  height: 10vh;
 }
 .social {
   display: flex;
-
-  
 }
 
 .button {
@@ -126,7 +119,7 @@ export default {};
 
 /* Instagram Button */
 .button.instagram {
-  background-color: ##25324c;
+  background-color: #25324c;
 }
 
 .button.instagram::before {
@@ -137,23 +130,20 @@ export default {};
   content: "nstagram";
 }
 
-
-
 @media only screen and (max-width: 768px) {
-  .container{
+  .container {
+    position: sticky;
+    top: 100vh;
     display: grid;
     grid-gap: 20px;
     text-align: center;
+    height: 16vh;
   }
-  .social{
+  .social {
     justify-content: center;
     width: 280px;
     height: 200px;
-    margin: auto auto; 
+    margin: auto auto;
   }
 }
-
-
-
-
 </style>

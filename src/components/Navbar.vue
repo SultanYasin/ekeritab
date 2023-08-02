@@ -66,9 +66,7 @@ export default {
 </script>
 
 <style scoped>
-#app {
-  position: relative;
-}
+
 
 #header {
   position: fixed;
@@ -97,6 +95,7 @@ export default {
 #header .nav-list ul {
   list-style: none;
   position: absolute;
+  transition: 0.5s ease left;
   background-color: rgb(31, 30, 30);
   width: 100vw;
   height: 100vh;
@@ -112,6 +111,7 @@ export default {
 }
 #header .nav-list ul.active {
   left: 0%;
+  color: red;
 }
 #header .nav-list ul a {
   font-size: 2rem;
@@ -128,7 +128,7 @@ export default {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(1);
   color: rgb(65, 17, 17);
   /*  color: rgba(240, 248, 255, 0.021); */
   font-size: 5rem;
@@ -210,10 +210,10 @@ export default {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  /* Media Query For Desktop */
+
+
   @media only screen and (min-width: 800px) {
-    /* header */
+    
     #header .hamburger {
       display: none;
     }
@@ -233,11 +233,8 @@ export default {
     #header .nav-list ul a:after {
       display: none;
     }
-    /* End header */
+ 
   }
-  #services .service-bottom .service-item {
-    flex-basis: 22%;
-    margin: 1.5%;
-  }
-}
+
+
 </style>

@@ -100,35 +100,30 @@
 </template>
 
 <style scoped>
-.wrapper {
-  height: calc(100vh - 10vh);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
-}
+
 .container {
-  height: 90vh;
-  width: 100vw;
   display: grid;
-  margin: 20% 0;
-  grid-template-columns: repeat(3, 1fr);
+  height: 100vh; 
+  width: 100vw;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
   align-items: center;
   place-items: center;
-}
-.service-header {
-  padding-top: 7%;
+  overflow-y: auto;
+  padding-top: 10vh;
+  grid-template-rows: auto;
+ 
+
 }
 
 .item {
   display: block;
   align-content: center;
   justify-content: center;
-  width: 300px;
+  width: 320px;
   height: 250px;
   overflow-y: hidden;
-  margin: 1vh 1vw;
+  
 }
 
 .title {
@@ -146,16 +141,26 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+  .wrapper{
+    margin-top: 150vh;
+
+  }
   .container {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(1, 1fr);
-
+    height: 100%;
     margin-bottom: 5%;
+    padding-top: 5vh;
+    grid-template-rows: auto;
+
   }
   .item {
     width: 240px;
     padding: 10vh auto;
+    padding: 5vh auto;
+
+
   }
   .service-header {
     padding-top: 8vh;
