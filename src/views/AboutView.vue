@@ -3,19 +3,24 @@
     <div class="img">
       <img src="../assets/server.jpg" alt="server-room" />
     </div>
+    <div class="txt-wrapper">
+
+    
     <div class="txt">
+      <h1>Ekerit AB</h1>
       <p>
-        Ekerit AB är ett konsultföretag som specialiserar sig på
-        dokumenthantering. Företaget grundades 2016 och har sitt huvudkontor i
-        Värnamo. Ekerit AB har ett team av erfarna konsulter som hjälper kunder
-        att utforska och implementera dokumenthanteringssystem. Företaget
-        erbjuder en mängd olika tjänster, inklusive: Utformning och utveckling
-        av dokumenthanteringslösningar Implementering och underhåll av
-        dokumenthanteringssystem Utbildning av användare i
-        dokumenthanteringssystem Support för dokumenthanteringssystem
+        Software development and consulting company based in
+        Värnamo, Sweden. We were founded in 2016 by the passionate software
+        engineers <span  > <i class="robert" > Robert Ekman </i></span>. <br> We are a team of
+        highly skilled and experienced developers who are passionate about
+        creating innovative and user-friendly software solutions. <br> Our mission is
+        to help businesses of all sizes achieve their goals through the use of
+        technology. We do this by providing our clients with a wide range of
+        services, including: Software development Consulting Training Support
       </p>
       <button>Contact Us</button>
     </div>
+  </div>
   </div>
 </template>
 
@@ -24,28 +29,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80vw;
-  height: 90vh;
-  overflow: hidden;
-  background: linear-gradient(to right,#010109 ,#000000,);
-  box-shadow: 5px 10px 27px 28px rgba(0, 0, 0, 0.62);
-  -webkit-box-shadow: 5px 10px 27px 28px rgba(0, 0, 0, 0.62);
-  -moz-box-shadow: 5px 10px 27px 28px rgba(0, 0, 0, 0.62);
+  width: 100vw;
+  height: 100vh;
+
 }
 
-.img {
-  max-width: 65%; /* Image takes 65% width */
+span{
+  text-decoration: underline;
+  font-weight: 900;
 }
-img {
-  width: 65vw;
+.robert{
+  font-weight: 600;
+}
+.img{
+  position: absolute;
+  top: 15vh;
   height: 80vh;
+  width:80vw ;
+  margin: 0 10vw 10vh 0;
+
 }
 
-.txt {
-  max-width: 35%;
+img {
+  height: 70vh;
+  width: 50vw;
+  position: inherit;
+  border-radius: 10px;
+}
+
+.txt-wrapper {
+  max-width: 40%;
   padding: 20px;
+
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0.7;
+  margin: 0 0 10vh 25vw;
+}
+
+.txt{
   color: #fff;
-  background: #000;
+
 }
 
 p {
@@ -54,8 +78,8 @@ p {
 }
 
 button {
-  background-color: #fff; /* Button background color is white */
-  color: #000; /* Button text color is black */
+  background-color: #fff; 
+  color: #000; 
   padding: 10px 20px;
   border: none;
   cursor: pointer;

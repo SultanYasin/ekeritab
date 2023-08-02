@@ -5,40 +5,10 @@
     </div>
 
     <div class="contact-wrapper">
-      <!--  contact2  -->
-      <form
-        id="contact-form"
-        class="form-horizontal"
-        @submit.prevent="handleSubmit"
-      >
-        <div class="form-group">
-          <div class="col-sm-12">
-            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" v-model="formData.name" required/>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <div class="col-sm-12">
-            <input  type="email"  class="form-control"  id="email"  placeholder="EMAIL"  name="email"  v-model="formData.email"  required/>
-          </div>
-        </div>
-
-        <textarea class="form-control" rows="13" placeholder="MESSAGE" name="message" v-model="formData.message" required></textarea>
-
-        <button
-          class="btn btn-primary send-button"
-          id="submit"
-          type="submit"
-          value="SEND"
-        >
-          <div class="alt-send-button">
-            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-          </div>
-        </button>
-      </form>
-
       <!-- contact1  -->
-      <div class="direct-contact-container">
+      
+
+        <div class="v1">
         <ul class="contact-list">
           <li class="list-item">
             <font-awesome-icon icon="city" size="2x" /><span
@@ -78,8 +48,7 @@
             >
           </li>
         </ul>
-
-        <hr />
+       <hr />
         <ul class="social-media-list">
           <li>
             <a href="#" target="_blank" class="contact-icon"
@@ -100,7 +69,43 @@
         <hr />
         <div class="copyright">&copy; Ekerit</div>
       </div>
+
+    
+
+
+      <form
+        id="contact-form"
+        class="form-horizontal"
+        @submit.prevent="handleSubmit"
+      >
+      <h3 class="form-txt" >Contact us Directly </h3>
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" v-model="formData.name" required/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input  type="email"  class="form-control"  id="email"  placeholder="EMAIL"  name="email"  v-model="formData.email"  required/>
+          </div>
+        </div>
+
+        <textarea class="form-control" rows="13" placeholder="MESSAGE" name="message" v-model="formData.message" required></textarea>
+
+        <button
+          class="btn btn-primary send-button"
+          id="submit"
+          type="submit"
+          value="SEND"
+        >
+          <div class="alt-send-button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          </div>
+        </button>
+      </form>
     </div>
+
   </section>
 </template>
 
@@ -136,10 +141,13 @@ export default {
 
 <style scoped>
 #contact {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+
+
+
 }
 
 #contact-form {
@@ -147,12 +155,17 @@ export default {
   height: 100%;
 
 }
+.form-horizontal {
+  width: 800px;
+  font-family: "Lato";
+  font-weight: 400;
 
+}
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding: 40px 0;
-  font: 200 20px "Oswald", sans-serif;
+  padding: 60px 0;
+  font: 200 15px "Oswald", sans-serif;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -163,26 +176,21 @@ export default {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 20px;
   position: relative;
-  max-width: 840px;
+  max-width: 100vw;
 }
 
-.form-horizontal {
-  width: 500px;
-  font-family: "Lato";
-  font-weight: 400;
-  margin-left: 0 10vw;
-  
-}
+
+
 .form-group {
-  margin-bottom: 20px;
+  margin: 20px 0 ;
+  width: 100%;
 }
 
 .form-control,
 textarea {
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
   background-color: #000;
   color: #fff;
   letter-spacing: 1px;
@@ -190,17 +198,22 @@ textarea {
   border: 1px solid #555;
   border-radius: 5px;
 }
+.form-txt{
+  text-align: center;
+  font-weight: 500;
+}
 
 .send-button {
   margin-top: 15px;
   height: 34px;
-  width: 400px;
+  width: 100%;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: ;
+  text-align: center;
+
 }
 
 .alt-send-button {
@@ -220,12 +233,10 @@ textarea {
   transform: translate3d(0px, -29px, 0px);
 }
 
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 500px;
-}
 
-/* Location, Phone, Email Section */
+
+
+/* _________________________________________________________________________________________ */
 .contact-list {
   list-style-type: none;
   margin-left: 40px;
@@ -237,7 +248,7 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px "Lato", sans-serif;
+  font: 350 18px "Lato", sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
 }
@@ -332,8 +343,14 @@ hr {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Begin Media Queries*/
+/* ___________________________________________________________________________________________________Begin Media Queries*/
 @media screen and (max-width: 850px) {
+
+
+  #contact{
+    height: auto;
+    padding-top: 50vh;
+  }
   .contact-wrapper {
     display: flex;
     flex-direction: column;
@@ -345,7 +362,7 @@ hr {
 
   .direct-contact-container {
     margin-top: 60px;
-    max-width: 300px;
+    max-width: 600px;
   }
   .social-media-list li {
     height: 60px;
@@ -357,56 +374,27 @@ hr {
     height: 60px;
     line-height: 60px;
   }
+  #contact-form {
+  width: 80%;
+  height: 100%;
+  padding-top: 15px;
 }
 
-@media screen and (max-width: 569px) {
-  .direct-contact-container,
-  .form-wrapper {
-    float: none;
-    margin: 0 auto;
-  }
-  .form-control,
-  textarea {
-    margin: 0 auto;
-  }
+.send-button {
+  margin-top: 15px;
 
-  .name,
-  .email,
-  textarea {
-    width: 280px;
-  }
-
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 280px;
-  }
-  .social-media-list {
-    left: 0;
-  }
-  .social-media-list li {
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    font-size: 2rem;
-  }
-  .social-media-list li:after {
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-  }
+  height: 34px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  display: flex;
 }
 
-@media screen and (max-width: 780px) {
-  .contact-wrapper {
-    width: 100vw;
-  }
-  .send-button {
-    width: 99%;
-  }
-  .form-horizontal,
-  .contact-list li {
-    width: 100%;
-  }
 
 }
+
+
 </style>

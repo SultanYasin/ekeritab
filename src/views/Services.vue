@@ -103,7 +103,7 @@
 
 .container {
   display: grid;
-  height: 100vh; 
+  height:auto; 
   width: 100vw;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
