@@ -1,0 +1,40 @@
+{
+  "Header": {
+    "home": "HEM",
+    "about": "OM OSS",
+    "services": "TJÄNSTER",
+    "contact": "CONTACT"
+  },
+  "Footer": {
+    "Organisationsnummer": "Organisationsnummer "
+  },
+  "Home": {
+    "subTitle": " Din kompletta IT-lösning ",
+    "heroMsg": "VI KAN ",
+    "buttonMsg": "Se vad vi kan erbjuda dig"
+  },
+  "About": {
+    "button":"Kontakta Oss ",    
+    "company_description": "Vi är ett mjukvaruutvecklings- och konsultföretag baserat i Värnamo, Sverige. Vi grundades 2016 av passionerade mjukvaruutvecklare  Robert Ekman.  Vi är ett team av högkvalificerade och erfarna utvecklare som brinner för att skapa innovativa och användarvänliga mjukvarulösningar.  Vår mission är att hjälpa företag i alla storlekar att nå sina mål genom användning av teknologi. Vi gör detta genom att erbjuda våra kunder ett brett utbud av tjänster, inklusive: Mjukvaruutveckling, Konsultation, och Support"
+  },
+  "Services": {
+    "title": "VÅRA TJÄNSTER",
+    "subTitle":" Vi hjälper er att utveckla era digitala processer och tjänster med innovativa systemlösningar.",
+    "SystemDevelopment":"Systemutveckling",
+    "SystemDevelopment_D":"Med en genomtänkt och utbyggbar arkitektur kan vi utveckla systemlösningar som möter era krav idag såväl som i framtiden, allt efter era behov.",
+    "Project": "Projekt",
+    "Project_D": "Vi analyserar de behov, idéer, problem och krav som finns och hjälper er genom design, testning och utveckling till drift och förvaltning.",
+    "DocumentManagement": "Dokumenthantering",
+    "DocumentManagement_D": "Vi hjälper er med utformning och producering av dokument, fakturor och olika flöden med erfarenheter från ett flertal innehållshanteringssystem. Vi kan även tillhandahålla support och nyutveckling i OpenText StreamServe.",
+    "ElectronicInvoices":"E-Faktura",
+    "ElectronicInvoices_D":"Vi hjälper er att digitalisera era processer, inklusive elektroniska dokument och fakturor. Vi kan hjälpa er att konvertera flöden till nya digitala kanaler, såsom e-fakturatjänster, Peppol, digitala brevlådor och dokumentarkiv.",
+    "Web":"Webb",
+    "Web_D":"Vad är en bra tjänst utan en användbar framsida? Vi kan erbjuda framtidssäkra lösningar för era unika interna och publika webbportaler och liknande oavsett om det är för ett befintligt eller nyutvecklat system.",
+    "Infrastructure":"Infrastruktur",
+    "Infrastructure_D":"Det är inte bara mjukvaran som är viktig. Behöver ni hjälp med drift av tjänster på egna servrar eller i molntjänster har vi kompetens inom drift och förvaltning av Unix/Linux-miljöer, databasadministration och backuphantering."
+
+
+    
+},
+  "Contact": {}
+}

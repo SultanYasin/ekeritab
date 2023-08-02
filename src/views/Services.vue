@@ -2,50 +2,34 @@
   <div class="wrapper">
     <div class="container">
       <div class="service-header title">
-        <h1>OUR SERVICES</h1>
-        <h3>
-          Vi hjälper er att utveckla era digitala processer och tjänster med
-          innovativa systemlösningar.
-        </h3>
+
+        <h3> {{ $t('Services.subTitle') }} </h3>
       </div>
       <div class="item">
         <div class="header">
           <div class="icon"><img src="../assets/icons8-code-96.png" /></div>
-          <div class="title"><h2>Systemutveckling</h2></div>
+          <div class="title"><h2>{{ $t('Services.SystemDevelopment') }}</h2></div>
         </div>
         <div class="text">
-          <p>
-            Med en genomtänkt och utbyggbar arkitektur kan vi utveckla
-            systemlösningar som möter era krav idag såväl som i framtiden, allt
-            efter era behov.
-          </p>
+          <p> {{ $t('Services.SystemDevelopment_D') }} </p>
         </div>
       </div>
       <div class="item">
         <div class="header">
           <div class="icon"><img src="../assets/icons8-bill-96.png" /></div>
-          <div class="title"><h2>E-faktura</h2></div>
+          <div class="title"><h2>{{ $t('Services.ElectronicInvoices') }}</h2></div>
         </div>
         <div class="text">
-          <p>
-            Vi hjälper er att digitalisera era processer, inklusive elektroniska
-            dokument och fakturor. Vi kan hjälpa er att konvertera flöden till
-            nya digitala kanaler, såsom e-fakturatjänster, Peppol, digitala
-            brevlådor och dokumentarkiv.
-          </p>
+          <p> {{ $t('Services.ElectronicInvoices_D') }} </p>
         </div>
       </div>
       <div class="item">
         <div class="header">
           <div class="icon"><img src="../assets/icons8-project-96.png" /></div>
-          <div class="title"><h2>Project</h2></div>
+          <div class="title"><h2>{{ $t('Services.Project') }}</h2></div>
         </div>
         <div class="text">
-          <p>
-            Vi analyserar de behov, idéer, problem och krav som finns och
-            hjälper er genom design, testning och utveckling till drift och
-            förvaltning.
-          </p>
+          <p> {{ $t('Services.Project_D') }} </p>
         </div>
       </div>
       <div class="item">
@@ -53,30 +37,20 @@
           <div class="icon">
             <img src="../assets/icons8-document-144.png" />
           </div>
-          <div class="title"><h2>Dokumenthantering</h2></div>
+          <div class="title"><h2> {{ $t('Services.DocumentManagement') }} </h2></div>
         </div>
         <div class="text">
-          <p>
-            Vi hjälper er med utformning och producering av dokument, fakturor
-            och olika flöden med erfarenheter från ett flertal
-            innehållshanteringssystem. Vi kan även tillhandahålla support och
-            nyutveckling i OpenText StreamServe.
-          </p>
+          <p> {{ $t('Services.DocumentManagement_D') }} </p>
         </div>
       </div>
 
       <div class="item">
         <div class="header">
           <div class="icon"><img src="../assets/icons8-website-96.png" /></div>
-          <div class="title"><h2>Webb</h2></div>
+          <div class="title"><h2>{{ $t('Services.Web') }}</h2></div>
         </div>
         <div class="text">
-          <p>
-            Vad är en bra tjänst utan en användbar framsida? Vi kan erbjuda
-            framtidssäkra lösningar för era unika interna och publika
-            webbportaler och liknande oavsett om det är för ett befintligt eller
-            nyutvecklat system.
-          </p>
+          <p> {{ $t('Services.Web_D') }} </p>
         </div>
       </div>
       <div class="item">
@@ -84,20 +58,18 @@
           <div class="icon">
             <img src="../assets/icons8-project-96 (1).png" />
           </div>
-          <div class="title"><h2>Infrastruktur</h2></div>
+          <div class="title"><h2>{{ $t('Services.Infrastructure') }}</h2></div>
         </div>
         <div class="text">
-          <p>
-            Det är inte bara mjukvaran som är viktig. Behöver ni hjälp med drift
-            av tjänster på egna servrar eller i molntjänster har vi kompetens
-            inom drift och förvaltning av Unix/Linux-miljöer,
-            databasadministration och backuphantering.
-          </p>
+          <p> {{ $t('Services.Infrastructure_D') }} </p>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+</script>
 
 <style scoped>
 

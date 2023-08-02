@@ -1,5 +1,7 @@
 <template>
+
   <div class="body">
+
     <div class="viwe1">
       <div class="hero">
         <div class="brand">
@@ -7,12 +9,13 @@
         </div>
 
         <div class="headline">
-          <h2>Your complete IT-solution</h2>
+          <!-- <h2>Your complete IT-solution</h2> -->
+          <h2>{{$t('Home.subTitle') }}</h2>
         </div>
       </div>
 
       <div class="wrapper">
-        <span class="first-text">WE CAN </span>
+        <span class="first-text">{{$t('Home.heroMsg') }} </span>
         <ul class="sec-texts">
           <li><span>Frontend</span></li>
           <li><span>Backend</span></li>
@@ -32,7 +35,24 @@
   </div>
 </template>
 
-<script></script>
+<script>
+
+import en from '../Languages/eng.json';
+import sv from '../Languages/sv.json';
+
+export default {
+  mixins: [en, sv],
+
+  data(){
+    return{
+      
+    }
+  },
+  
+
+}
+
+</script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");

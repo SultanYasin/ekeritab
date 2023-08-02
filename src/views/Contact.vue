@@ -78,7 +78,7 @@
         class="form-horizontal"
         @submit.prevent="handleSubmit"
       >
-      <h3 class="form-txt" >Contact us Directly </h3>
+     <!--  <h3 class="form-txt" >Contact us Directly </h3> -->
         <div class="form-group">
           <div class="col-sm-12">
             <input type="text" class="form-control" id="name" placeholder="NAME" name="name" v-model="formData.name" required/>
@@ -100,7 +100,8 @@
           value="SEND"
         >
           <div class="alt-send-button">
-            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+           <span class="send-text">SEND</span>
+           <span class="send-text">SEND</span>
           </div>
         </button>
       </form>
@@ -110,7 +111,9 @@
 </template>
 
 <script>
+
 export default {
+  
   data() {
     return {
       formData: {

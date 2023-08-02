@@ -36,7 +36,10 @@
 </template>
 
 <script>
+import en from '../Languages/eng.json';
+import sv from '../Languages/sv.json';
 export default {
+  
   data() {
     return {
       isMenuOpen: false,

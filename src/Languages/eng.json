@@ -1,0 +1,39 @@
+{
+  "Header": {
+    "home": "HEM",
+    "about": "OM OSS",
+    "services": "TJÄNSTER",
+    "contact": "CONTACT"
+  },
+  "Footer": {
+    "Organisationsnummer": "Organisationsnummer "
+  },
+  "Home": {
+    "subTitle": " Your complete IT-solution ",
+    "heroMsg": "WE CAN ",
+    "buttonMsg": "See what we can offer you"
+  },
+  "About": {
+    "button": "Contact Us",
+    "company_description": "Software development and consulting company based in Värnamo, Sweden. We were founded in 2016 by the passionate software engineers Robert Ekman . We are a team of highly skilled and experienced developers who are passionate about creating innovative and user-friendly software solutions.  Our mission is to help businesses of all sizes achieve their goals through the use of technology. We do this by providing our clients with a wide range of services, including: Software, development, Consulting, Support"
+  },
+  "Services": {
+    "title": "OUR SERVICES",
+    "subTitle": "We help you develop your digital processes and services with innovative system solutions.",
+    "SystemDevelopment":"Development",
+    "SystemDevelopment_D":"With a well-thought-out and scalable architecture, we can develop system solutions that meet your requirements today as well as in the future, tailored to your needs.",
+    "Project": "Project",
+    "Project_D": "We analyze the needs, ideas, problems, and requirements that exist and assist you through design, testing, and development to operation and management",
+    "DocumentManagement": "Document Management",
+    "DocumentManagement_D": "We assist you with the design and production of documents, invoices, and various workflows, drawing from experience with several content management systems. We can also provide support and new development in OpenText StreamServe.",
+    "ElectronicInvoices":"E-Invoices",
+    "ElectronicInvoices_D":"We help you digitize your processes, including electronic documents and invoices. We can assist you in converting workflows to new digital channels, such as e-invoicing services, Peppol, digital mailboxes, and document archives.",
+    "Web":"Web",
+    "Web_D":"What is a good service without a usable front page? We can offer future-proof solutions for your unique internal and public web portals, regardless of whether it is for an existing or newly developed system.",
+    "Infrastructure":"Infrastructure",
+    "Infrastructure_D":"Not just the software that matters. If you need help with service operation on your own servers or in cloud services, we have expertise in managing and maintaining Unix/Linux environments, database administration, and backup management."
+  },
+
+
+  "Contact": {}
+}
