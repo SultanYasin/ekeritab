@@ -18,7 +18,7 @@
           </li>
           <li class="list-item">
             <font-awesome-icon icon="location-dot" size="2x" /><span
-              class="contact-text place"
+              class="contact-text place_a"
               >Järnvägsgatan 3 </span
             >
           </li>
@@ -257,15 +257,18 @@ textarea {
 }
 
 .place {
-  margin-left: 62px;
+  margin-left: 65px;
+}
+.place_a {
+  margin-left: 77px;
 }
 
 .phone {
-  margin-left: 56px;
+  margin-left: 65px;
 }
 
 .gmail {
-  margin-left: 53px;
+  margin-left: 65px;
 }
 
 .contact-text a {
@@ -352,7 +355,7 @@ hr {
 
   #contact{
     height: auto;
-    padding-top: 50vh;
+    padding-top: 8vh;
   }
   .contact-wrapper {
     display: flex;

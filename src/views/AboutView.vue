@@ -79,8 +79,11 @@ button {
 }
 
 @media screen and (max-width: 850px) {
+  .container{
+    height: 90vh;
+  }
   img {
-    height: 70vh;
+    height: 65vh;
     width: 90vw;
     position: inherit;
     border-radius: 10px;
@@ -89,6 +92,7 @@ button {
   .txt-wrapper {
     max-width: 80%;
     padding: 20px;
+    margin: 0 auto;
     border-radius: 10px;
     background-color: black;
     opacity: 0.8;

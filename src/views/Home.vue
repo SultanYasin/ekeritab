@@ -1,21 +1,20 @@
 <template>
-
   <div class="body">
-
     <div class="viwe1">
       <div class="hero">
         <div class="brand">
-          <div>EKER<span class="it">IT/&gt;</span></div>
+          <div>EKER<span class="it">IT</span> &nbsp;AB</div>
+          <!--<div>EKER<span class="it">IT/&gt;</span></div> -->
         </div>
 
         <div class="headline">
           <!-- <h2>Your complete IT-solution</h2> -->
-          <h2>{{$t('Home.subTitle') }}</h2>
+          <h2>{{ $t("Home.subTitle") }}</h2>
         </div>
       </div>
 
       <div class="wrapper">
-        <span class="first-text">{{$t('Home.heroMsg') }} </span>
+        <span class="first-text">{{ $t("Home.heroMsg") }}</span>
         <ul class="sec-texts">
           <li><span>Frontend</span></li>
           <li><span>Backend</span></li>
@@ -30,28 +29,22 @@
     </div>
 
     <div class="viwe2">
-      <img src="../assets/code11.jpg" alt="" srcset="" />
+      <img src="../assets/code11.jpg" alt="" srcset="" class="pc"/>
+      <img src="../assets/bg.png" alt="" srcset="" class="mob"/>
     </div>
   </div>
 </template>
 
 <script>
 
-import en from '../Languages/eng.json';
-import sv from '../Languages/sv.json';
 
 export default {
-  mixins: [en, sv],
 
-  data(){
-    return{
-      
-    }
+
+  data() {
+    return {};
   },
-  
-
-}
-
+};
 </script>
 
 <style scoped>
@@ -61,10 +54,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 95vh;
   max-width: 100vw;
-  background: linear-gradient(to right,#010109 ,#000000,#20202b);
-  overflow-y:hidden ;
+  background: linear-gradient(to right, #010109, #000000, #20202b);
+  overflow-y: hidden;
 }
 /* #20202b */
 .viwe1 {
@@ -73,8 +66,10 @@ export default {
 
 img {
   width: 100%;
-  height: 89vh;
- 
+  height: 100vh;
+}
+.mob{
+  display: none;
 }
 .Btn {
   margin: 0 12vw;
@@ -151,9 +146,8 @@ img {
   width: fit-content;
 }
 .it {
-  color: rgb(199, 116, 116);
   padding-left: 6px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .headline h2 {
@@ -167,9 +161,10 @@ img {
 .wrapper .first-text {
   font-size: 3rem;
   color: silver;
+  margin-right: -25px;
 }
-.wrapper{
- display: flex;
+.wrapper {
+  display: flex;
   text-align: center;
   align-items: center;
 }
@@ -186,7 +181,6 @@ img {
   font-size: 3rem;
   color: whitesmoke;
   list-style: none;
-  text-shadow: 0 0 10px rgb(0, 2, 14);
   animation: slide 12s steps(4) infinite, colorful 6s infinite;
 }
 
@@ -204,6 +198,7 @@ img {
 
 .sec-texts li span {
   position: relative;
+
 }
 
 .sec-texts li span::before {
@@ -221,6 +216,108 @@ img {
   100% {
     left: 100%;
     margin: 0 -35px 0 35px;
+  }
+}
+/* _______________________________________________________________________________________________________________________________________________________ */
+@media only screen and (max-width: 821px) {
+  .body {
+    position: relative;
+    background: #000;
+    display: block;
+    width: 100vw;
+    min-height: 70vh;
+    overflow: hidden;
+
+
+
+  }
+
+  .viwe1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 6vw;
+    opacity: 1;
+    z-index: 2;
+    opacity: .6;
+    background-color: #000;
+    color: whitesmoke;
+
+  }
+  .pc{
+    display: none;
+  }
+
+  .mob{
+    display: flex;
+    z-index: 1;
+
+
+  }
+  img {
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    
+    min-height: 90vh;
+    top: 0;
+    
+  }
+
+
+  .wrapper .first-text {
+    font-size: 2rem;
+    color: silver;
+
+  }
+  .wrapper {
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  
+  }
+
+  .wrapper .sec-texts {
+    height: 85px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+
+  .sec-texts li {
+    position: relative;
+    top: 0;
+    font-size: 2rem;
+    color: whitesmoke;
+    list-style: none;
+    animation: slide 12s steps(4) infinite, colorful 6s infinite;
+  }
+
+  .hero {
+  font-size: 2rem;
+  margin: 5vh 12vw 0 12vw;
+}
+  .brand {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: silver;
+  }
+  .it {
+    padding-left: 6px;
+    font-weight: 600;
+  }
+
+  .headline h2 {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.5rem;
+    width: fit-content;
+    color: silver;
   }
 }
 </style>

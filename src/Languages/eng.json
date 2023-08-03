@@ -5,18 +5,22 @@
     "services": "TJÄNSTER",
     "contact": "CONTACT"
   },
+  
   "Footer": {
     "Organisationsnummer": "Organisationsnummer "
   },
+
   "Home": {
     "subTitle": " Your complete IT-solution ",
     "heroMsg": "WE CAN ",
     "buttonMsg": "See what we can offer you"
   },
+
   "About": {
     "button": "Contact Us",
-    "company_description": "Software development and consulting company based in Värnamo, Sweden. We were founded in 2016 by the passionate software engineers Robert Ekman . We are a team of highly skilled and experienced developers who are passionate about creating innovative and user-friendly software solutions.  Our mission is to help businesses of all sizes achieve their goals through the use of technology. We do this by providing our clients with a wide range of services, including: Software, development, Consulting, Support"
+    "company_description": "Software development and consulting company based in Värnamo, Sweden. We were founded in 2016 by the passionate software engineer Robert Ekman . We are a team of highly skilled and experienced developers who are passionate about creating innovative and user-friendly software solutions.  Our mission is to help businesses of all sizes achieve their goals through the use of technology. We do this by providing our clients with a wide range of services, including: Software, development, Consulting, Support"
   },
+  
   "Services": {
     "title": "OUR SERVICES",
     "subTitle": "We help you develop your digital processes and services with innovative system solutions.",

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="service-header title">
 
-        <h3> {{ $t('Services.subTitle') }} </h3>
+        <h3 class="sub-title" > {{ $t('Services.subTitle') }} </h3>
       </div>
       <div class="item">
         <div class="header">
@@ -75,7 +75,7 @@
 
 .container {
   display: grid;
-  height:auto; 
+  height:95vh; 
   width: 100vw;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
@@ -86,6 +86,10 @@
   grid-template-rows: auto;
  
 
+}
+
+.sub-title{
+  font-weight: 700;
 }
 
 .item {
@@ -114,7 +118,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   .wrapper{
-    margin-top: 150vh;
+    margin-top: 1vh;
 
   }
   .container {
