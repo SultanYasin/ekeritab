@@ -3,6 +3,7 @@
     <div id="header">
       <div class="header container">
         <div class="nav-bar">
+          <img src="../assets/logo-white.png" alt="logo" class="logo" >
           <div class="nav-list">
             <div class="hamburger" @click="toggleMenu">
               <div class="bar"></div>
@@ -10,25 +11,26 @@
 
             <ul :class="{ active: isMenuOpen }">
               <li>
-                <RouterLink to="/" @click.stop="toggleMenu">HOME</RouterLink>
+                <RouterLink to="/" @click.stop="toggleMenu"> {{ $t('Header.home') }} </RouterLink>
               </li>
               <li>
                 <RouterLink to="/services" @click.stop="toggleMenu"
-                  >SERVICES</RouterLink
+                  >{{ $t('Header.services') }}</RouterLink
                 >
               </li>
               <li>
                 <RouterLink to="/about" @click.stop="toggleMenu"
-                  >ABOUT</RouterLink
+                  >{{ $t('Header.about') }}</RouterLink
                 >
               </li>
               <li>
                 <RouterLink to="/contact" @click.stop="toggleMenu"
-                  >CONTACT</RouterLink
+                  >{{ $t('Header.contact') }}</RouterLink
                 >
               </li>
             </ul>
           </div>
+          
         </div>
       </div>
     </div>
@@ -36,8 +38,7 @@
 </template>
 
 <script>
-import en from '../Languages/eng.json';
-import sv from '../Languages/sv.json';
+
 export default {
   
   data() {
@@ -95,6 +96,14 @@ export default {
   padding: 0 10px;
 }
 
+.logo{
+  padding-top: 10px;
+  width: 180px;
+  border-radius: 20px;
+
+
+
+}
 #header .nav-list ul {
   list-style: none;
   position: absolute;

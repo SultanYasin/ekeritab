@@ -6,17 +6,28 @@
     </div>
 
     <div class="lang">
-     <button> <p> sv <img src="../assets/sweden.png" alt="" /> </p> </button>
-     <button> <p> en <img src="../assets/usa.png" alt="" /> </p> </button>
-
+      <button @click="changeLocale('sv')"> <p> sv <img src="../assets/sweden.png" alt="" /> </p> </button>
+      <button @click="changeLocale('en')"> <p> en <img src="../assets/usa.png" alt="" /> </p> </button>
     </div>
   </div>
 </template>
 
+<script>
+import i18n from '../Languages/i18n';
+
+export default {
+  methods: {
+    changeLocale(locale) {
+      i18n.locale = locale;
+    }
+  }
+};
+</script>
+
 <style scoped>
 .container {
   display: flex;
-  justify-content: space-around; /* Add this line to align elements at the ends */
+  justify-content: space-around; 
   position: sticky;
   bottom: 0;
   width: 100vw;
