@@ -24,7 +24,10 @@
         </ul>
       </div>
       <div class="Btn">
-        <button>See What we can offer you</button>
+        <router-link to="/services">
+          <button>{{ $t("Home.buttonMsg") }}</button>
+        </router-link>
+       
       </div>
     </div>
 
@@ -71,7 +74,7 @@ img {
 .mob{
   display: none;
 }
-.Btn {
+Button {
   margin: 0 12vw;
   width: 25vw;
   height: 40px;
@@ -79,53 +82,21 @@ img {
   border-radius: 10px;
   background: linear-gradient(
     to right,
-    #77530a,
-    #ffd277,
-    #77530a,
-    #77530a,
-    #ffd277,
-    #77530a
+    gray,
+    lightgray,
+    silver,
+    gray
   );
-  background-size: 250%;
-  background-position: left;
-  color: #ffd277;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+ 
+  color: black;
+  font-weight: 500;
   cursor: pointer;
   transition-duration: 1s;
   overflow: hidden;
 }
 
-.Btn::before {
-  position: absolute;
-  content: "See What we can offer you";
-  color: #ffd277;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 97%;
-  height: 90%;
-  border-radius: 8px;
-  transition-duration: 1s;
-  background-color: rgba(0, 0, 0, 0.842);
-  background-size: 200%;
-}
 
-.Btn:hover {
-  background-position: right;
-  transition-duration: 1s;
-}
-
-.Btn:hover::before {
-  background-position: right;
-  transition-duration: 1s;
-}
-
-.Btn:active {
-  transform: scale(0.95);
-}
 
 .wrapper {
   display: flex;
@@ -227,9 +198,6 @@ img {
     width: 100vw;
     min-height: 70vh;
     overflow: hidden;
-
-
-
   }
 
   .viwe1 {
@@ -255,20 +223,19 @@ img {
   .mob{
     display: flex;
     z-index: 1;
-
-
   }
   img {
     position: absolute;
     right: 0;
     width: 100vw;
-    
     min-height: 90vh;
     top: 0;
     
   }
 
-
+.Btn{
+  width: 50%;
+}
   .wrapper .first-text {
     font-size: 2rem;
     color: silver;

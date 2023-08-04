@@ -1,7 +1,7 @@
 <template>
   <section id="contact">
     <div class="section-header">
-      <h4>Contact us and we'll talk more about how we can help you.</h4>
+      <h4>{{ $t('Contact.subTitle') }}</h4>
     </div>
 
     <div class="contact-wrapper">
@@ -52,7 +52,7 @@
         <ul class="social-media-list">
           <li>
             <a href="#" target="_blank" class="contact-icon"
-              ><font-awesome-icon icon="fa-brands fa-linkedin"
+              ><font-awesome-icon icon="fa-brands fa-facebook"
             /></a>
           </li>
           <li>
@@ -167,11 +167,11 @@ export default {
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 10px;
   font: 200 15px "Oswald", sans-serif;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .contact-wrapper {

@@ -1,8 +1,8 @@
 {
   "Header": {
-    "home": "HEM",
-    "about": "OM OSS",
-    "services": "TJÄNSTER",
+    "home": "HOME",
+    "about": "ABOUT",
+    "services": "SERVICES",
     "contact": "CONTACT"
   },
   
@@ -39,5 +39,7 @@
   },
 
 
-  "Contact": {}
+  "Contact": {
+    "subTitle" :"Reach out, let's explore  how we can enhance your IT experience."
+  }
 }

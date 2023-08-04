@@ -7,10 +7,11 @@
       <div class="txt">
         <h1>Ekerit AB</h1>
         <p>
-
           {{ $t('About.company_description') }}
         </p>
-        <button>{{ $t('About.button') }}</button>
+        <router-link to="/contact">
+          <button>{{ $t('About.button') }}</button>
+        </router-link>
       </div>
     </div>
   </div>
