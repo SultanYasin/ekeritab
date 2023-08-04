@@ -74,6 +74,7 @@
 <style scoped>
 
 .container {
+  position: relative;
   display: grid;
   height:95vh; 
   width: 100vw;

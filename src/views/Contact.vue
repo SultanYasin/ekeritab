@@ -1,4 +1,5 @@
 <template>
+  <div class="wrapper">
   <section id="contact">
     <div class="section-header">
       <h4>{{ $t('Contact.subTitle') }}</h4>
@@ -108,6 +109,7 @@
     </div>
 
   </section>
+</div>
 </template>
 
 <script>
@@ -143,6 +145,10 @@ export default {
 </script>
 
 <style scoped>
+.wrapper{
+
+  min-height: 80vh;
+}
 #contact {
   display: flex;
   flex-direction: column;
