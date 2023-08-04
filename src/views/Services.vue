@@ -115,7 +115,12 @@ img {
   width: 45px;
   padding-right: 10px;
 }
+@media only screen and (max-width: 1100px) {
+  .container {
 
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 @media only screen and (max-width: 768px) {
   .wrapper{
     margin-top: 1vh;

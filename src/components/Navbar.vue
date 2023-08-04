@@ -96,13 +96,11 @@ export default {
   padding: 0 10px;
 }
 
+
 .logo{
   padding-top: 10px;
   width: 180px;
   border-radius: 20px;
-
-
-
 }
 #header .nav-list ul {
   list-style: none;
@@ -142,7 +140,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   color: rgb(65, 17, 17);
-  /*  color: rgba(240, 248, 255, 0.021); */
+
   font-size: 5rem;
   letter-spacing: 50px;
   z-index: -1;

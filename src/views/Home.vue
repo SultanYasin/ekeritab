@@ -25,7 +25,7 @@
       </div>
       <div class="Btn">
         <router-link to="/services">
-          <button> <h> {{ $t("Home.buttonMsg") }} </h></button>
+          <button class="button"> <h> {{ $t("Home.buttonMsg") }} </h></button>
         </router-link>
        
       </div>
@@ -178,21 +178,56 @@ Button {
   }
 }
 /* _______________________________________________________________________________________________________________________________________________________ */
-@media only screen and (max-width: 821px) {
+@media only screen and (max-width: 820px) {
+
   .body {
     position: relative;
     background: #000;
     display: block;
     width: 100vw;
-    min-height: 70vh;
+    min-height: 75vh;
     overflow: hidden;
-    border: 1px solid white;
   }
 
-  .viwe1 {
+  .wrapper {
+    text-align: center;
+    align-items: center;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    padding: 0 12vw;
+  
+  }
+  .wrapper .first-text {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    font-size: 3rem;
+    color: silver;
+    padding-right: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .pc{
+    display: none;
+  }
+
+  .mob{
+    display: flex;
+    z-index: 1;
+  }
+  img {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    
+  }
+  .viwe1 {
+    display: block;
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -201,7 +236,42 @@ Button {
     z-index: 2;
     opacity: .8;
     background-color: #000;
-    color: whitesmoke;
+    color: silver;
+    padding: 10px;
+
+  }
+
+  .Btn{
+  width: 50%;
+}
+button{
+  width: 100%;
+  font-size: large;
+  font-weight: 600;
+}
+}
+@media only screen and (max-width: 621px) {
+  .body {
+    position: relative;
+    background: #000;
+    display: block;
+    width: 100vw;
+    min-height: 75vh;
+    overflow: hidden;
+  }
+
+  .viwe1 {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    z-index: 2;
+    opacity: .8;
+    background-color: #000;
+    color: silver;
+    padding: 10px;
 
   }
   .pc{
@@ -216,7 +286,7 @@ Button {
     position: absolute;
     right: 0;
     width: fit-content;
-    min-height: 90vh;
+    min-height: 100vh;
     top: 0;
     
   }
@@ -224,17 +294,29 @@ Button {
 .Btn{
   width: 50%;
 }
+button{
+  width: 100%;
+}
   .wrapper .first-text {
+    display: flex;
     font-size: 2rem;
     color: silver;
+    
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
   }
   .wrapper {
     text-align: center;
     align-items: center;
-    margin-left: 0;
-    padding-left: 0;
+    margin-left: 9vw;
+    padding-right: 0;
+
     width: 100%;
+    padding-left: 3vw;
+ 
   
   }
 
