@@ -2,81 +2,98 @@
   <div class="wrapper">
     <div class="container">
       <div class="service-header title">
-
-        <h3 class="sub-title" > {{ $t('Services.subTitle') }} </h3>
+        <h3 class="sub-title">{{ $t("Services.subTitle") }}</h3>
       </div>
       <div class="item">
         <div class="header">
-          <div class="icon"><img src="../assets/icons8-code-96.png" /></div>
-          <div class="title"><h2>{{ $t('Services.SystemDevelopment') }}</h2></div>
+          <div class="icon">
+            <img src="../assets/icons8-code-96.png" alt="Project" />
+          </div>
+          <div class="title">
+            <h2>{{ $t("Services.SystemDevelopment") }}</h2>
+          </div>
         </div>
         <div class="text">
-          <p> {{ $t('Services.SystemDevelopment_D') }} </p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="header">
-          <div class="icon"><img src="../assets/icons8-bill-96.png" /></div>
-          <div class="title"><h2>{{ $t('Services.ElectronicInvoices') }}</h2></div>
-        </div>
-        <div class="text">
-          <p> {{ $t('Services.ElectronicInvoices_D') }} </p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="header">
-          <div class="icon"><img src="../assets/icons8-project-96.png" /></div>
-          <div class="title"><h2>{{ $t('Services.Project') }}</h2></div>
-        </div>
-        <div class="text">
-          <p> {{ $t('Services.Project_D') }} </p>
+          <p>{{ $t("Services.SystemDevelopment_D") }}</p>
         </div>
       </div>
       <div class="item">
         <div class="header">
           <div class="icon">
-            <img src="../assets/icons8-document-144.png" />
+            <img src="../assets/icons8-bill-96.png" alt="Project" />
           </div>
-          <div class="title"><h2> {{ $t('Services.DocumentManagement') }} </h2></div>
+          <div class="title">
+            <h2>{{ $t("Services.ElectronicInvoices") }}</h2>
+          </div>
         </div>
         <div class="text">
-          <p> {{ $t('Services.DocumentManagement_D') }} </p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="header">
-          <div class="icon"><img src="../assets/icons8-website-96.png" /></div>
-          <div class="title"><h2>{{ $t('Services.Web') }}</h2></div>
-        </div>
-        <div class="text">
-          <p> {{ $t('Services.Web_D') }} </p>
+          <p>{{ $t("Services.ElectronicInvoices_D") }}</p>
         </div>
       </div>
       <div class="item">
         <div class="header">
           <div class="icon">
-            <img src="../assets/icons8-project-96 (1).png" />
+            <img src="../assets/icons8-project-96.png" alt="Project" />
           </div>
-          <div class="title"><h2>{{ $t('Services.Infrastructure') }}</h2></div>
+          <div class="title">
+            <h2>{{ $t("Services.Project") }}</h2>
+          </div>
         </div>
         <div class="text">
-          <p> {{ $t('Services.Infrastructure_D') }} </p>
+          <p>{{ $t("Services.Project_D") }}</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">
+          <div class="icon">
+            <img src="../assets/icons8-document-144.png" alt="Project" />
+          </div>
+          <div class="title">
+            <h2>{{ $t("Services.DocumentManagement") }}</h2>
+          </div>
+        </div>
+        <div class="text">
+          <p>{{ $t("Services.DocumentManagement_D") }}</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="header">
+          <div class="icon">
+            <img src="../assets/icons8-website-96.png" alt="Project" />
+          </div>
+          <div class="title">
+            <h2>{{ $t("Services.Web") }}</h2>
+          </div>
+        </div>
+        <div class="text">
+          <p>{{ $t("Services.Web_D") }}</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="header">
+          <div class="icon">
+            <img src="../assets/icons8-project.png" alt="Project" />
+          </div>
+          <div class="title">
+            <h2>{{ $t("Services.Infrastructure") }}</h2>
+          </div>
+        </div>
+        <div class="text">
+          <p>{{ $t("Services.Infrastructure_D") }}</p>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style scoped>
-
 .container {
   position: relative;
   display: grid;
-  height:95vh; 
+  height: 95vh;
   width: 100vw;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
@@ -85,11 +102,9 @@
   overflow-y: auto;
   padding-top: 10vh;
   grid-template-rows: auto;
- 
-
 }
 
-.sub-title{
+.sub-title {
   font-weight: 700;
 }
 
@@ -100,7 +115,6 @@
   width: 320px;
   height: 250px;
   overflow-y: hidden;
-  
 }
 
 .title {
@@ -118,14 +132,12 @@ img {
 }
 @media only screen and (max-width: 1100px) {
   .container {
-
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 768px) {
-  .wrapper{
+  .wrapper {
     margin-top: 1vh;
-
   }
   .container {
     display: grid;
@@ -135,14 +147,11 @@ img {
     margin-bottom: 5%;
     padding-top: 5vh;
     grid-template-rows: auto;
-
   }
   .item {
     width: 240px;
     padding: 10vh auto;
     padding: 5vh auto;
-
-
   }
   .service-header {
     padding-top: 8vh;
