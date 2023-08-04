@@ -25,7 +25,7 @@
       </div>
       <div class="Btn">
         <router-link to="/services">
-          <button> <h> {{ $t("Home.buttonMsg") }} </h></button>
+          <button class="Button"> <h3> {{ $t("Home.buttonMsg") }} </h3></button>
         </router-link>
        
       </div>
@@ -74,14 +74,23 @@ img {
 .mob{
   display: none;
 }
-Button {
+.Button {
   margin: 0 12vw;
   width: 25vw;
   height: 40px;
   border: none;
   border-radius: 10px;
-
-
+  background: inherit;
+  color: silver;
+  cursor: pointer;
+  border: 1px solid silver;
+}
+.Button:hover{
+  background-color: rgb(142, 130, 130);
+  color: #000;
+}
+.Button:active{
+  background-color: rgb(106, 100, 100);
 }
 
 
@@ -177,8 +186,11 @@ Button {
     margin: 0 -35px 0 35px;
   }
 }
+@media only screen and (max-width: 850px) {
+
+}
 /* _______________________________________________________________________________________________________________________________________________________ */
-@media only screen and (max-width: 821px) {
+@media only screen and (max-width: 600px) {
   .body {
     position: relative;
     background: #000;
@@ -186,7 +198,6 @@ Button {
     width: 100vw;
     min-height: 70vh;
     overflow: hidden;
-    border: 1px solid white;
   }
 
   .viwe1 {
@@ -197,9 +208,10 @@ Button {
     height: 100vh;
     position: absolute;
     top: 0;
+    left: 6vw;
     opacity: 1;
     z-index: 2;
-    opacity: .8;
+    opacity: .6;
     background-color: #000;
     color: whitesmoke;
 
@@ -215,13 +227,13 @@ Button {
   img {
     position: absolute;
     right: 0;
-    width: fit-content;
+    width: 100vw;
     min-height: 90vh;
     top: 0;
     
   }
 
-.Btn{
+.Button{
   width: 50%;
 }
   .wrapper .first-text {
