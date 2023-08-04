@@ -2,27 +2,33 @@
   <div class="container">
     <div class="txt">
       <h3>Ekerit AB</h3>
-      <h4>Organisationsnummer 559065-5766</h4>
+      <h4>Organisationsnummer: 559065-5766</h4>
     </div>
 
     <div class="lang">
-      <button @click="changeLocale('sv')"> <p> sv <img src="../assets/sweden.png" alt="" /> </p> </button>
-      <button @click="changeLocale('en')"> <p> en <img src="../assets/usa.png" alt="" /> </p> </button>
+      <button @click="changeLocale('sv')"><p>sv <img src="../assets/sweden.png" alt="" /></p></button>
+      <button @click="changeLocale('en')"><p>en <img src="../assets/usa.png" alt="" /></p></button>
     </div>
   </div>
 </template>
 
 <script>
-import i18n from '../Languages/i18n';
 
 export default {
   methods: {
-    changeLocale(locale) {
-      i18n.locale = locale;
-    }
-  }
+    changeLocale(localeValue) {
+      this.$i18n.locale = localeValue; 
+    },
+  },
 };
 </script>
+
+
+
+
+
+
+
 
 <style scoped>
 .container {
