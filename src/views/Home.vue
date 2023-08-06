@@ -8,7 +8,6 @@
         </div>
 
         <div class="headline">
-        
           <h2>{{ $t("Home.subTitle") }}</h2>
         </div>
       </div>
@@ -25,26 +24,22 @@
       </div>
       <div class="Btn">
         <router-link to="/services">
-
-          <button class="third"> <h4> {{ $t("Home.buttonMsg") }} </h4></button>
+          <button class="third">
+            <h4>{{ $t("Home.buttonMsg") }}</h4>
+          </button>
         </router-link>
-       
       </div>
     </div>
 
     <div class="viwe2">
-      <img src="../assets/code11.jpg" alt="" srcset="" class="pc"/>
-      <img src="../assets/bg.png" alt="" srcset="" class="mob"/>
+      <img src="../assets/code11.jpg" alt="" srcset="" class="pc" />
+      <img src="../assets/bg.png" alt="" srcset="" class="mob" />
     </div>
   </div>
 </template>
 
 <script>
-
-
 export default {
-
-
   data() {
     return {};
   },
@@ -72,7 +67,7 @@ img {
   width: 100%;
   height: 100vh;
 }
-.mob{
+.mob {
   display: none;
 }
 
@@ -101,59 +96,23 @@ Button {
   height: 40px;
   border: none;
   border-radius: 10px;
-
-
 }
-
-.btn {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin: 20px;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-.btn:hover, .btn:focus {
-  color: #fff;
-  outline: 0;
-}
-
 
 .third {
-  border-color: #3498db;
+  border-color: #4d92fe;
   color: #fff;
-  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  box-shadow: 0 0 40px 40px #4d92fe inset, 0 0 0 0 #4d92fe;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
-    background-color: transparent;
-    cursor: pointer;
+  background-color: transparent;
+  cursor: pointer;
 
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 
   line-height: 1;
 }
 .third:hover {
-  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  box-shadow: 0 0 10px 0 #4d92fe inset, 0 0 10px 4px #4d92fe;
 }
 
 .wrapper {
@@ -164,16 +123,15 @@ Button {
   text-align: start;
   align-items: center;
 }
+
 .hero {
   font-size: 2rem;
   margin: 20vh 12vw 0 12vw;
 }
 
-
 .wrapper .first-text {
   font-size: 3rem;
   color: silver;
- 
 }
 
 .wrapper .sec-texts {
@@ -205,7 +163,6 @@ Button {
 
 .sec-texts li span {
   position: relative;
-
 }
 
 .sec-texts li span::before {
@@ -227,7 +184,6 @@ Button {
 }
 /* _______________________________________________________________________________________________________________________________________________________ */
 @media only screen and (max-width: 820px) {
-
   .body {
     position: relative;
     background: #000;
@@ -246,11 +202,11 @@ Button {
     color: silver;
   }
 
-  .pc{
+  .pc {
     display: none;
   }
 
-  .mob{
+  .mob {
     display: flex;
     z-index: 1;
   }
@@ -260,7 +216,6 @@ Button {
     width: 100%;
     min-height: 100vh;
     top: 0;
-    
   }
   .viwe1 {
     display: block;
@@ -270,21 +225,20 @@ Button {
     top: 0;
     opacity: 1;
     z-index: 2;
-    opacity: .8;
+    opacity: 0.8;
     background-color: #000;
     color: silver;
     padding: 10px;
-
   }
 
-  .Btn{
-  width: 50%;
-}
-button{
-  width: 100%;
-  font-size: large;
-  font-weight: 600;
-}
+  .Btn {
+    width: 50%;
+  }
+  button {
+    width: 100%;
+    font-size: large;
+    font-weight: 600;
+  }
 }
 
 /* ____________---------------____________________-------------____________________------------------------------------------------------------ */
@@ -306,17 +260,16 @@ button{
     top: 0;
     opacity: 1;
     z-index: 2;
-    opacity: .8;
+    opacity: 0.8;
     background-color: #000;
     color: silver;
     padding: 10px;
-
   }
-  .pc{
+  .pc {
     display: none;
   }
 
-  .mob{
+  .mob {
     display: flex;
     z-index: 1;
   }
@@ -326,24 +279,22 @@ button{
     width: fit-content;
     min-height: 100vh;
     top: 0;
-    
   }
 
-.Btn{
-  width: 80%;
-}
-button{
-  width: 100%;
-}
-.wrapper{
-  text-align: start;
-}
+  .Btn {
+    width: 80%;
+  }
+  button {
+    width: 100%;
+  }
+  .wrapper {
+    text-align: start;
+  }
   .wrapper .first-text {
     display: flex;
     font-size: 1.8rem;
     color: silver;
   }
-
 
   .wrapper .sec-texts {
     height: 85px;
@@ -361,18 +312,14 @@ button{
   }
 
   .hero {
-  font-size: 2rem;
-  margin: 5vh 12vw 0 12vw;
-}
+    font-size: 2rem;
+    margin: 5vh 12vw 0 12vw;
+  }
   .brand {
     font-size: 2rem;
     text-transform: uppercase;
     color: silver;
     letter-spacing: 2px;
-  }
-  .it {
-    padding-left: 6px;
-    font-weight: 600;
   }
 
   .headline h2 {
