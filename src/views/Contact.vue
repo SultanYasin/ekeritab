@@ -358,10 +358,14 @@ hr {
 /* ___________________________________________________________________________________________________Begin Media Queries*/
 @media screen and (max-width: 850px) {
 
+.wrapper{
 
+  overflow: auto;
+}
   #contact{
-    height: auto;
-    padding-top: 8vh;
+    height: 100vh;
+    padding: 8vh 0;
+
   }
   .contact-wrapper {
     display: flex;
