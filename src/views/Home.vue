@@ -8,7 +8,7 @@
         </div>
 
         <div class="headline">
-          <!-- <h2>Your complete IT-solution</h2> -->
+        
           <h2>{{ $t("Home.subTitle") }}</h2>
         </div>
       </div>
@@ -75,6 +75,26 @@ img {
 .mob{
   display: none;
 }
+
+.brand {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: silver;
+  align-items: center;
+  width: fit-content;
+}
+.it {
+  padding-left: 6px;
+  font-weight: 600;
+}
+
+.headline h2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 2rem;
+  width: fit-content;
+  color: silver;
+}
 Button {
   margin: 0 12vw;
   width: 25vw;
@@ -140,41 +160,22 @@ Button {
   display: flex;
   width: 40vw;
   margin: 10vh 12vw;
-
   background: #000;
 }
 .hero {
   font-size: 2rem;
   margin: 20vh 12vw 0 12vw;
 }
-.brand {
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: silver;
-  align-items: center;
-  width: fit-content;
-}
-.it {
-  padding-left: 6px;
-  font-weight: 600;
-}
 
-.headline h2 {
-  display: inline-block;
-  margin: 0;
-  font-size: 2rem;
-  width: fit-content;
-  color: silver;
-}
 
 .wrapper .first-text {
   font-size: 3rem;
   color: silver;
-  margin-right: -25px;
+ 
 }
 .wrapper {
   display: flex;
-  text-align: center;
+  text-align: start;
   align-items: center;
 }
 

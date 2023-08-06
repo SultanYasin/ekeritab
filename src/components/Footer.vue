@@ -40,7 +40,7 @@ export default {
   background: linear-gradient(to right, #010109, #000000);
   bottom: 0;
   height: 13dvh;
-  padding-bottom: 12dvh;
+
 }
 
 img {
@@ -72,16 +72,15 @@ button{
 @media only screen and (max-width: 850px) {
   .container {
     position: sticky;
-    margin-top: 5vh;
+    padding-top: 5vh;
     top: 100vh;
     display: block;
     text-align: center;
     min-height: 10vh;
     padding-top: 15px;
     margin-bottom: 15px;
+    padding-bottom: 12dvh;
   }
-  button{
-padding-top: 10px;
-}
+
 }
 </style>
