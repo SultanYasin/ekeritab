@@ -246,5 +246,12 @@ export default {
  
   }
 
+  @media only screen and (max-width: 500px) {
+    .logo{
+      width: 120px;
+    }
+  }
+
+
 
 </style>
