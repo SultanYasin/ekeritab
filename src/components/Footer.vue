@@ -39,7 +39,8 @@ export default {
   width: 100vw;
   background: linear-gradient(to right, #010109, #000000);
   bottom: 0;
-  height: 10vh;
+  height: 13dvh;
+  padding-bottom: 12dvh;
 }
 
 img {
