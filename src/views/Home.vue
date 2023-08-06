@@ -289,6 +289,8 @@ Button {
   }
   .wrapper {
     text-align: start;
+    margin-top: 25vh ;
+    margin-bottom: 0 ;
   }
   .wrapper .first-text {
     display: flex;
