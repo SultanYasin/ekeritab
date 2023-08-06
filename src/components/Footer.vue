@@ -72,14 +72,11 @@ button{
 @media only screen and (max-width: 850px) {
   .container {
     position: sticky;
-    padding-top: 5vh;
     top: 100vh;
     display: block;
     text-align: center;
-    min-height: 10vh;
-    padding-top: 15px;
-    margin-bottom: 15px;
-    padding-bottom: 12dvh;
+    padding-top: 10px;
+    padding-bottom: 9dvh;
   }
 
 }

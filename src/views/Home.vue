@@ -161,6 +161,8 @@ Button {
   width: 40vw;
   margin: 10vh 12vw;
   background: #000;
+  text-align: start;
+  align-items: center;
 }
 .hero {
   font-size: 2rem;
@@ -172,11 +174,6 @@ Button {
   font-size: 3rem;
   color: silver;
  
-}
-.wrapper {
-  display: flex;
-  text-align: start;
-  align-items: center;
 }
 
 .wrapper .sec-texts {
@@ -241,24 +238,12 @@ Button {
   }
 
   .wrapper {
-    text-align: center;
-    align-items: center;
-    margin-left: 0;
-    padding-left: 0;
     width: 100%;
-    padding: 0 12vw;
-  
   }
   .wrapper .first-text {
     display: flex;
     font-size: 3rem;
     color: silver;
-    padding-right: 10px;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
   }
 
   .pc{
@@ -301,6 +286,8 @@ button{
   font-weight: 600;
 }
 }
+
+/* ____________---------------____________________-------------____________________------------------------------------------------------------ */
 @media only screen and (max-width: 621px) {
   .body {
     position: relative;
@@ -348,28 +335,15 @@ button{
 button{
   width: 100%;
 }
+.wrapper{
+  text-align: start;
+}
   .wrapper .first-text {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: silver;
-    
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
   }
-  .wrapper {
-    text-align: center;
-    align-items: center;
-    margin-left: 9vw;
-    padding-right: 0;
 
-    width: 100%;
-    padding-left: 3vw;
- 
-  
-  }
 
   .wrapper .sec-texts {
     height: 85px;
@@ -380,7 +354,7 @@ button{
   .sec-texts li {
     position: relative;
     top: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: whitesmoke;
     list-style: none;
     animation: slide 12s steps(4) infinite, colorful 6s infinite;
@@ -394,6 +368,7 @@ button{
     font-size: 2rem;
     text-transform: uppercase;
     color: silver;
+    letter-spacing: 2px;
   }
   .it {
     padding-left: 6px;
