@@ -3,7 +3,7 @@
     <div id="header">
       <div class="header container">
         <div class="nav-bar">
-          <img src="../assets/logo-white.png" alt="logo" class="logo" >
+          <img src="../assets/logo-white.png" alt="logo" class="logo" />
           <div class="nav-list">
             <div class="hamburger" @click="toggleMenu">
               <div class="bar"></div>
@@ -11,26 +11,33 @@
 
             <ul :class="{ active: isMenuOpen }">
               <li>
-                <RouterLink to="/" @click.stop="toggleMenu"> {{ $t('Header.home') }} </RouterLink>
+                <RouterLink to="/" @click.stop="toggleMenu">
+                  {{ $t("Header.home") }}
+                </RouterLink>
               </li>
               <li>
-                <RouterLink to="/services" @click.stop="toggleMenu"
-                  >{{ $t('Header.services') }}</RouterLink
-                >
+                <RouterLink to="/services" @click.stop="toggleMenu">{{
+                  $t("Header.services")
+                }}</RouterLink>
               </li>
               <li>
-                <RouterLink to="/about" @click.stop="toggleMenu"
-                  >{{ $t('Header.about') }}</RouterLink
-                >
+                <RouterLink to="/about" @click.stop="toggleMenu">{{
+                  $t("Header.about")
+                }}</RouterLink>
               </li>
               <li>
-                <RouterLink to="/contact" @click.stop="toggleMenu"
-                  >{{ $t('Header.contact') }}</RouterLink
-                >
+                <RouterLink to="/contact" @click.stop="toggleMenu">{{
+                  $t("Header.contact")
+                }}</RouterLink>
               </li>
+             <!--  <li class="lang">
+                <select name="" id="">
+                  <option value="">Eng</option>
+                  <option value="">SV</option>
+                </select>
+              </li> -->
             </ul>
           </div>
-          
         </div>
       </div>
     </div>
@@ -38,9 +45,7 @@
 </template>
 
 <script>
-
 export default {
-  
   data() {
     return {
       isMenuOpen: false,
@@ -71,6 +76,9 @@ export default {
 
 <style scoped>
 
+.lang{
+  bottom: 0;
+}
 
 #header {
   position: fixed;
@@ -96,8 +104,7 @@ export default {
   padding: 0 10px;
 }
 
-
-.logo{
+.logo {
   padding-top: 10px;
   width: 180px;
   border-radius: 20px;
@@ -154,8 +161,8 @@ export default {
   color: crimson;
 }
 #header .hamburger {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   display: inline-block;
   border: 3px solid white;
   border-radius: 50%;
@@ -179,7 +186,7 @@ export default {
 }
 #header .hamburger .bar {
   height: 2px;
-  width: 30px;
+  width: 25px;
   position: relative;
   background-color: white;
   z-index: -1;
@@ -220,38 +227,31 @@ export default {
   }
 }
 
-
-
-  @media only screen and (min-width: 800px) {
-    
-    #header .hamburger {
-      display: none;
-    }
-    #header .nav-list ul {
-      position: initial;
-      display: block;
-      height: auto;
-      width: fit-content;
-      background-color: transparent;
-    }
-    #header .nav-list ul li {
-      display: inline-block;
-    }
-    #header .nav-list ul li a {
-      font-size: 1.1rem;
-    }
-    #header .nav-list ul a:after {
-      display: none;
-    }
- 
+@media only screen and (min-width: 800px) {
+  #header .hamburger {
+    display: none;
   }
-
-  @media only screen and (max-width: 500px) {
-    .logo{
-      width: 120px;
-    }
+  #header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
   }
+  #header .nav-list ul li {
+    display: inline-block;
+  }
+  #header .nav-list ul li a {
+    font-size: 1.1rem;
+  }
+  #header .nav-list ul a:after {
+    display: none;
+  }
+}
 
-
-
+@media only screen and (max-width: 500px) {
+  .logo {
+    width: 120px;
+  }
+}
 </style>

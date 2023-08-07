@@ -100,7 +100,7 @@
   align-items: center;
   place-items: center;
   overflow-y: auto;
-  padding-top: 10vh;
+  padding: 10vh 10vw;
   grid-template-rows: auto;
 }
 
